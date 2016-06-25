@@ -26,6 +26,12 @@ func TestSolution(t *testing.T) {
 			Q:        []int{0, 5, 4, 3},
 			Expected: []int{2, 1, 2, 2},
 		},
+		{
+			S:        "AC",
+			P:        []int{0, 0, 1},
+			Q:        []int{0, 1, 1},
+			Expected: []int{1, 1, 2},
+		},
 	}
 
 	for _, value := range testValues {
