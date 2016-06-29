@@ -2,21 +2,21 @@ package solution
 
 var (
 	cMap = map[byte]int{
-		0x41: 1,
-		0x43: 2,
-		0x47: 3,
-		0x54: 4,
+		'A': 1,
+		'C': 2,
+		'G': 3,
+		'T': 4,
 	}
-	cList = []byte{0x41, 0x43, 0x47, 0x54}
+	cList = []byte{'A', 'C', 'G', 'T'}
 )
 
 func Solution(S string, P []int, Q []int) []int {
 	sLen := len(S)
 	pMap := map[byte][]int{
-		0x41: make([]int, sLen),
-		0x43: make([]int, sLen),
-		0x47: make([]int, sLen),
-		0x54: make([]int, sLen),
+		'A': make([]int, sLen),
+		'C': make([]int, sLen),
+		'G': make([]int, sLen),
+		'T': make([]int, sLen),
 	}
 
 	// make a prefix sum
